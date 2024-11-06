@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 # Diretório onde os arquivos Excel estão localizados
-diretorio = "C:/Users/edyelgue.carneiro/Downloads/gmud"
+diretorio = "C:/Users/edyelgue.carneiro/Downloads"
 
 # Lista para armazenar os DataFrames de cada arquivo
 dataframes = []
@@ -19,4 +19,4 @@ for arquivo in os.listdir(diretorio):
 df_unido = pd.concat(dataframes, ignore_index=True)
 
 # Salvar o DataFrame unido em um novo arquivo Excel
-df_unido.to_excel('arquivo_unido.xlsx', index=False)
+df_unido.to_excel('consolidado2024.xlsx', index=False)
